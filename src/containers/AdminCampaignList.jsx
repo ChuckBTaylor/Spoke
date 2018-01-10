@@ -55,7 +55,8 @@ class AdminCampaignList extends React.Component {
     return (
       <DropDownMenu value={this.state.campaignsFilter.isArchived} onChange={this.handleFilterChange}>
         <MenuItem value={false} primaryText='Current' />
-        <MenuItem value primaryText='Archived' />
+        {/* added ={false} after value for clarity*/}
+        <MenuItem value={false} primaryText='Archived' />
       </DropDownMenu>
     )
   }
